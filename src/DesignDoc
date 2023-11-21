@@ -1,0 +1,32 @@
+WarRunner.java
+Main Method
+-Prompts user for name
+-Stores user name in variable
+-Creates an instance of the War class, United States
+-Provides context based on the war
+-Proceeds to provide choices to advocate for peace or declare war
+-If the user picks peace, they are then impeached
+-10 instances of the War class are declared, 10 countries join.
+-If the user declares war, they are given the chance to make allies before going to war
+-The US goes to war, and based on the outcome, a response is printed
+-A while loop is used to determine if the United States wins or loses. During the loop running, the user can stimulate war, find allies, negotiate, and spend resources via methods from the War class
+-If the US loses, the user is exiled. If the US wins, the user is celebrated.
+War.java
+Instance Variables
+-countryName: Name of the country
+-troops: Number of ground troops
+-weaponScore: Rating of the country's weaponry
+-ships: Quantity of ships
+-warScore: Tracks war successes and losses and determines the outcome of the wars
+-won: Boolean indicating if the country won the war
+-money: Amount of money the United States starts off with
+Constructor (public War(String countryName, int troops, int weaponScore, int ships, double warScore)):
+-Initializes a country with its attributes.
+-Inputted Name, the amount of troops the country has, weaponry score, the amount of ships and the warScore, which determines is the country is winning of loosing a war
+Methods:
+simulateWar(War opponent): Simulates a war between the United States and Russia. Return Type is Void. Compares the countries resources to determine the winner (troops, ships, etc). If there is a loss or a win, the code will update the attributes of the country.
+warWon(): Checks if the United States won the war. No parameters. Return type boolean.
+findAlly(List<War> allies, List<War> enemies, War Russia, List<War> countries). Parameters: List<War> allies: List of potential allies. List<War> enemies: List of potential enemies. War Russia: Instance representing Russia.List<War> countries: List of available countries. Randomly selects a country via a list and checks if it is a potential ally or enemy. If it is an ally, the US gets resources. If an enemy, Russia gets the resources. Return Type Void.
+negotiations(War unitedStates, War Russia). Return type void. Parameters: War unitedStates: Instance representing the United States. War Russia: Instance representing Russia. Simulates random negotiations between the countries
+resources(War unitedStates) Parameters: War unitedStates: Instance representing the United States. Lets the user spend country capital on ships or troops if needed. Return type void.
+toString(): Parameters: None Return Type: StringOverrides toString() method to display country information.
